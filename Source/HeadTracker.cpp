@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 #include "HeadTracker.h"
 
 
@@ -53,6 +54,10 @@ void HeadTracker::changeListenerCallback (ChangeBroadcaster* stream)
     
     samplingRateHz =  (1 - tc) * (1000.0f / (timeMs - lastTimeStampMs)) +   tc * samplingRateHz;
     lastTimeStampMs = timeMs;
+    
+    // Here to make sure startup conditions of Nan of Inf don't propogate.
+    if (!std::isfinite(samplingRateHz))
+        samplingRateHz = 0;
     
     std::ios::fmtflags old_settings = std::cout.flags();
     std::cout.precision(2);

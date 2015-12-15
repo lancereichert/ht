@@ -102,7 +102,7 @@ void loop(){
     AHRSupdate(&G_Dt);
   }
 
-  if (millis() - printTimer > 50){
+  if (millis() - printTimer > 10){
     printTimer = millis();
     GetEuler();
     Serial.print(printTimer);
