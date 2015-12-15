@@ -14,6 +14,7 @@ MainContentComponent::MainContentComponent()
 {
     setSize (600, 400);
     
+    /*
     StringPairArray portList = SerialPort::getSerialPortPaths();
     if(portList.size())
     {
@@ -47,6 +48,9 @@ MainContentComponent::MainContentComponent()
     } else {
         std::cout << "No serial ports found of any type" << std::endl;
     }
+     */
+    
+    headTracker = new HeadTracker();
 }
 
 MainContentComponent::~MainContentComponent()
@@ -56,6 +60,9 @@ MainContentComponent::~MainContentComponent()
     
     if (port)
         delete port;
+    
+    if (headTracker)
+        delete headTracker;
     
 }
 

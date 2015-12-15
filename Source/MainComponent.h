@@ -11,6 +11,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "SerialPort.h"
+#include "HeadTracker.h"
 
 
 //==============================================================================
@@ -30,13 +31,14 @@ public:
     void resized();
     
     virtual void changeListenerCallback (ChangeBroadcaster* stream) override {
-        std::cout << "Line received: " << ((SerialPortInputStream*)stream)->readNextLine() << std::endl;
+        //std::cout << "Line received: " << ((SerialPortInputStream*)stream)->readNextLine() << std::endl;
     }
 
 private:
     //==============================================================================
     SerialPort* port;
     SerialPortInputStream* pInputStream;
+    HeadTracker* headTracker;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

@@ -12,6 +12,8 @@
             file="Source/MainComponent.cpp"/>
       <FILE id="bYZps8" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="hjuKRq" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="GvlRE5" name="HeadTracker.cpp" compile="1" resource="0" file="Source/HeadTracker.cpp"/>
+      <FILE id="jrz0VC" name="HeadTracker.h" compile="0" resource="0" file="Source/HeadTracker.h"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
