@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="dOtXc4" name="BinauralTestApp" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.BinauralTestApp" includeBinaryInAppConfig="1"
+              jucerVersion="3.1.1">
+  <MAINGROUP id="ENNgZn" name="BinauralTestApp">
+    <GROUP id="{4EBF65C0-F924-DC4A-5B3A-D896913F4304}" name="Source">
+      <FILE id="UkyxAM" name="mac_SerialPort.cpp" compile="1" resource="0"
+            file="Source/juce_SerialPort/mac_SerialPort.cpp"/>
+      <FILE id="dQMFSN" name="SerialPort.h" compile="0" resource="0" file="Source/juce_SerialPort/SerialPort.h"/>
+      <FILE id="FxITjj" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="bYZps8" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="hjuKRq" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="10.10 SDK" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="BinauralTestApp"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="BinauralTestApp"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../pancam/external/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../pancam/external/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
